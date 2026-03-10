@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Password Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-animate"></div>
+    <div class="container">
+        <h1>Təhlükəsizlik Analizi</h1>
+        
+        <div class="input-wrapper">
+            <input type="password" id="passwordInput" placeholder="Şifrənizi daxil edin...">
+            <i class="fa-solid fa-eye" id="toggleIcon"></i>
+        </div>
+
+        <div class="strength-container">
+            <div class="strength-labels">
+                <span>Güc: <span id="strengthText">Zəif</span></span>
+                <span id="percentText">0%</span>
+            </div>
+            <div class="strength-meter">
+                <div id="strengthBar" class="bar"></div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fa-solid fa-clock"></i>
+                <div class="stat-info">
+                    <small>Qırılma müddəti</small>
+                    <p id="bruteForceText">-</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="suggestions-box">
+            <h4><i class="fa-solid fa-shield-halved"></i> Tövsiyələr</h4>
+            <ul id="suggestionList">
+                <li>Analiz üçün şifrə yazın...</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
